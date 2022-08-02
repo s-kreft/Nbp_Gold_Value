@@ -1,14 +1,15 @@
-global using nbp_gold_value.Data;
+
 using nbp_gold_value.Services;
 using Microsoft.EntityFrameworkCore;
+using nbp_gold_value;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<INbpService, NbpService>();
+builder.Services.AddScoped<INbpService, NbpService>();
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<DataContext>(options =>
+builder.Services.AddDbContext<nbpContext>(options =>
 {
     var connectionString = "server=localhost;user=root;password=root;database=nbp";
 

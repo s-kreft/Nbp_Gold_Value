@@ -1,14 +1,17 @@
 ﻿using nbp_gold_value.Models;
 using Newtonsoft.Json;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace nbp_gold_value.Services
 {
     public class NbpService : INbpService
     {
         static readonly HttpClient client = new HttpClient();
-        public NbpService()
+        private readonly nbpContext _dataContext;
+        public NbpService(nbpContext dataContext)
         {
-
+            _dataContext = dataContext;
         }
         public String writeText()
         {
@@ -19,7 +22,10 @@ namespace nbp_gold_value.Services
         {
             var response = await client.GetStringAsync("http://api.nbp.pl/api/cenyzlota/?format=json");
             var goldValue =  JsonConvert.DeserializeObject<GoldValue[]>(response);
-            return goldValue.FirstOrDefault() ?? new GoldValue();
+            var data = goldValue.FirstOrDefault() ?? new GoldValue();
+            _dataContext.GoldValues.Add(data);
+            _dataContext.SaveChanges();
+            return data;
         }
     }
 }

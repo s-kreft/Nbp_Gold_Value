@@ -34,15 +34,17 @@ namespace nbp_gold_value
 
             modelBuilder.Entity<GoldValue>(entity =>
             {
-                entity.HasNoKey();
+                
 
                 entity.ToTable("gold_value");
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Price).HasColumnName("price");
+                entity.Property(e => e.Cena).HasColumnName("price");
 
-                entity.Property(e => e.PriceDate).HasColumnName("price_date");
+                entity.Property(e => e.Data).HasColumnName("price_date");
+
+                entity.HasAlternateKey(e => e.Id);
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 namespace nbp_gold_value
 {
-    public partial class GoldValue
+    public class GoldValue
     {
         public int? Id { get; set; }
-        public double? Price { get; set; }
-        public DateOnly? PriceDate { get; set; }
+        public double? Cena { get; set; }
+        public string Data { get; set; }
     }
 }
