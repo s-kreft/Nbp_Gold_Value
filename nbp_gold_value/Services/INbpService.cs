@@ -2,6 +2,7 @@
 {
     public interface INbpService
     {
+        List<GoldValue> ReturnDataFromDatabase();
         Task<GoldValue> ReturnGoldValueAsync();
         string writeText();
     }

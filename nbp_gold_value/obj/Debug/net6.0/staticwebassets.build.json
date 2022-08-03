@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2OgZEe39S7qoxkjmb9b/3nGi+ewOx3BEe9qppdI91ss=",
+  "Hash": "uiF2Fp0iqvIGQiEnYGBErl/OxplLXvD3mAyR/ep3c5A=",
   "Source": "nbp_gold_value",
   "BasePath": "_content/nbp_gold_value",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Projects\\Studia\\ALG\\nbp_gold_value\\nbp_gold_value\\obj\\Debug\\net6.0\\scopedcss\\bundle\\nbp_gold_value.styles.css",
-      "SourceId": "nbp_gold_value",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\Studia\\ALG\\nbp_gold_value\\nbp_gold_value\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/nbp_gold_value",
-      "RelativePath": "nbp_gold_value.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Projects\\Studia\\ALG\\nbp_gold_value\\nbp_gold_value\\obj\\Debug\\net6.0\\scopedcss\\bundle\\nbp_gold_value.styles.css"
-    },
-    {
-      "Identity": "C:\\Projects\\Studia\\ALG\\nbp_gold_value\\nbp_gold_value\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\nbp_gold_value.bundle.scp.css",
-      "SourceId": "nbp_gold_value",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Projects\\Studia\\ALG\\nbp_gold_value\\nbp_gold_value\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/nbp_gold_value",
-      "RelativePath": "nbp_gold_value.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Projects\\Studia\\ALG\\nbp_gold_value\\nbp_gold_value\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\nbp_gold_value.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Projects\\Studia\\ALG\\nbp_gold_value\\nbp_gold_value\\wwwroot\\css\\site.css",
       "SourceId": "nbp_gold_value",

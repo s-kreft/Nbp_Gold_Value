@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using System.ComponentModel.DataAnnotations;
 
 namespace nbp_gold_value
 {
@@ -37,12 +38,13 @@ namespace nbp_gold_value
                 
 
                 entity.ToTable("gold_value");
-
+              
                 entity.Property(e => e.Id).HasColumnName("id");
+                entity.Property(e => e.Id).IsRequired();
 
-                entity.Property(e => e.Cena).HasColumnName("price");
+                entity.Property(e => e.Price).HasColumnName("price");
 
-                entity.Property(e => e.Data).HasColumnName("price_date");
+                entity.Property(e => e.PriceDate).HasColumnName("price_date");
 
                 entity.HasAlternateKey(e => e.Id);
             });
